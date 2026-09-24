@@ -30,8 +30,6 @@ Lab1/
 ├── reflection.md         # Báo cáo suy ngẫm (Part 16) và trả lời Learning Check (Part 15)
 ├── dataset/              # Chứa tập dữ liệu 30K documents C4
 │   └── c4-train.00000-of-01024-30K.json.gz
-├── result/               # Bản sao kết quả đánh giá định lượng
-│   └── results.csv
 └── W1.pdf                # Đề bài và hướng dẫn thực hành của môn học
 ```
 
