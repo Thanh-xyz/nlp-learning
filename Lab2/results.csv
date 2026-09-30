@@ -1,0 +1,24 @@
+experiment_type,model_name,train_ppl,valid_ppl,test_ppl,context,target_or_candidate,prob_or_score,rank
+perplexity,Unigram Laplace,1579.26,1075.08,1046.71,,,,
+perplexity,Bigram MLE,52.01,inf,inf,,,,
+perplexity,Bigram Laplace,1776.19,1894.62,1996.44,,,,
+perplexity,Trigram MLE,4.88,inf,inf,,,,
+perplexity,Trigram Laplace,3787.58,5948.97,6271.29,,,,
+next_word_prediction,Bigram Laplace,,,,the cat,had (actual: was),0.000182,1
+next_word_prediction,Bigram Laplace,,,,the cat,christmas (actual: was),0.000182,2
+next_word_prediction,Bigram Laplace,,,,the cat,bother (actual: was),0.000182,3
+next_word_prediction,Bigram Laplace,,,,natural language,</s> (actual: processing),0.000815,1
+next_word_prediction,Bigram Laplace,,,,natural language,of (actual: processing),0.000453,2
+next_word_prediction,Bigram Laplace,,,,natural language,spoken (actual: processing),0.000272,3
+next_word_prediction,Bigram Laplace,,,,machine learning,</s> (actual: algorithms),0.000453,1
+next_word_prediction,Bigram Laplace,,,,machine learning,experience (actual: algorithms),0.000272,2
+next_word_prediction,Bigram Laplace,,,,machine learning,to (actual: algorithms),0.000272,3
+next_word_prediction,Bigram Laplace,,,,artificial intelligence,gathering (actual: systems),0.000273,1
+next_word_prediction,Bigram Laplace,,,,artificial intelligence,in (actual: systems),0.000182,2
+next_word_prediction,Bigram Laplace,,,,artificial intelligence,agencies (actual: systems),0.000182,3
+next_word_prediction,Bigram Laplace,,,,in order,to (actual: to),0.002348,1
+next_word_prediction,Bigram Laplace,,,,in order,</s> (actual: to),0.000994,2
+next_word_prediction,Bigram Laplace,,,,in order,for (actual: to),0.000632,3
+sentence_ranking,Bigram Laplace,,,,machine learning,Candidate A: is useful for nlp,3.12e-14 (norm: 0.000420),1
+sentence_ranking,Bigram Laplace,,,,machine learning,Candidate B: banana computer quickly,7.47e-13 (norm: 0.000091),2
+sentence_ranking,Bigram Laplace,,,,machine learning,Candidate C: studies language models,7.46e-13 (norm: 0.000091),3
