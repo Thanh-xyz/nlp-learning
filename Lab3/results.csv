@@ -1,0 +1,61 @@
+experiment_type,model_name,parameter,metric_name,metric_value,pair_or_query,target_or_candidate,score,rank
+cooccurrence_matrix,Cooccurrence_Window_1,window=1,sparsity,0.956,matrix_sparsity,non_zeros=64630,0.956,1
+cooccurrence_similarity,Cooccurrence_Window_1,window=1,cosine_similarity,0.3162,doctor-hospital,hospital,0.3162,1
+cooccurrence_matrix,Cooccurrence_Window_2,window=2,sparsity,0.9221,matrix_sparsity,non_zeros=114401,0.9221,1
+cooccurrence_similarity,Cooccurrence_Window_2,window=2,cosine_similarity,0.2372,doctor-hospital,hospital,0.2372,1
+cooccurrence_matrix,Cooccurrence_Window_5,window=5,sparsity,0.8535,matrix_sparsity,non_zeros=215247,0.8535,1
+cooccurrence_similarity,Cooccurrence_Window_5,window=5,cosine_similarity,0.4535,doctor-hospital,hospital,0.4535,1
+context_window_effect,Word2Vec_SkipGram_D100,"window=2,5,10",cosine_similarity,0.7848,doctor-physician,"w2=0.8252, w5=0.7848, w10=0.8469",0.7848,1
+context_window_effect,Word2Vec_SkipGram_D100,"window=2,5,10",cosine_similarity,0.5701,doctor-hospital,"w2=0.6111, w5=0.5701, w10=0.6325",0.5701,1
+context_window_effect,Word2Vec_SkipGram_D100,"window=2,5,10",cosine_similarity,0.7398,cat-dog,"w2=0.7621, w5=0.7398, w10=0.6734",0.7398,1
+context_window_effect,Word2Vec_SkipGram_D100,"window=2,5,10",cosine_similarity,0.5317,doctor-disease,"w2=0.4978, w5=0.5317, w10=0.5939",0.5317,1
+context_window_effect,Word2Vec_SkipGram_D100,"window=2,5,10",cosine_similarity,0.7329,car-vehicle,"w2=0.7608, w5=0.7329, w10=0.7446",0.7329,1
+dimension_tradeoff,Word2Vec_SkipGram_D50,dim=50,train_time_sec,11.67,doctor-physician,sim_doc_phy=0.8353,0.8353,1
+dimension_tradeoff,Word2Vec_SkipGram_D100,dim=100,train_time_sec,12.44,doctor-physician,sim_doc_phy=0.7848,0.7848,1
+dimension_tradeoff,Word2Vec_SkipGram_D300,dim=300,train_time_sec,24.18,doctor-physician,sim_doc_phy=0.7853,0.7853,1
+word_similarity_evaluation,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7848,doctor - physician,doctor - physician,0.7848,1
+word_similarity_evaluation,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.751,king - queen,king - queen,0.751,2
+word_similarity_evaluation,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7398,cat - dog,cat - dog,0.7398,3
+word_similarity_evaluation,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.6321,car - automobile,car - automobile,0.6321,4
+word_similarity_evaluation,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.3354,computer - banana,computer - banana,0.3354,5
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7924,doctor,surgeon,0.7924,1
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7848,doctor,physician,0.7848,2
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7625,doctor,ophthalmologist,0.7625,3
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7617,doctor,anesthesia,0.7617,4
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7521,doctor,veterinarian,0.7521,5
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7542,hospital,medicine,0.7542,1
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7511,hospital,clinic,0.7511,2
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7444,hospital,practitioner,0.7444,3
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7391,hospital,northwestern,0.7391,4
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7374,hospital,louisville,0.7374,5
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7492,patient,physician,0.7492,1
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7459,patient,hygiene,0.7459,2
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7404,patient,gpb,0.7404,3
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7357,patient,doctor,0.7357,4
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7274,patient,nurse,0.7274,5
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8715,disease,chronic,0.8715,1
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8293,disease,infection,0.8293,2
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8237,disease,respiratory,0.8237,3
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8218,disease,kidney,0.8218,4
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8138,disease,disorders,0.8138,5
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7999,computer,desktop,0.7999,1
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7733,computer,downloads,0.7733,2
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7692,computer,dashboard,0.7692,3
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7676,computer,device,0.7676,4
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.7666,computer,settings,0.7666,5
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8561,football,basketball,0.8561,1
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8363,football,hockey,0.8363,2
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8181,football,championship,0.8181,3
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8127,football,honors,0.8127,4
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8094,football,champions,0.8094,5
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8828,banana,cornstarch,0.8828,1
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8825,banana,minced,0.8825,2
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8815,banana,tortilla,0.8815,3
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8813,banana,shaker,0.8813,4
+inspect_embeddings_top5,Word2Vec_SkipGram_D100_W5,"dim=100, window=5",cosine_similarity,0.8783,banana,elastic,0.8783,5
+semantic_search_evaluation,Semantic Search (Word2Vec),query_cosine_sim,retrieval_relevance_score,0.8142,medical treatment,Doc 1: patient therapy clinical care,0.8142,1
+semantic_search_evaluation,Semantic Search (Word2Vec),query_cosine_sim,retrieval_relevance_score,0.7315,medical treatment,Doc 2: acute hospital surgical care,0.7315,2
+semantic_search_evaluation,Semantic Search (Word2Vec),query_cosine_sim,retrieval_relevance_score,0.4219,medical treatment,Doc 3: healthy nutrition exercise,0.4219,3
+semantic_search_evaluation,Semantic Search (Word2Vec),query_cosine_sim,retrieval_relevance_score,0.1205,medical treatment,Doc 4: hardware computer operating error,0.1205,4
+semantic_search_evaluation,Lexical Search (Exact Match TF-IDF),query_cosine_sim,retrieval_relevance_score,0.0,medical treatment,Doc 1: patient therapy clinical care,0.0,3
+semantic_search_evaluation,Lexical Search (Exact Match TF-IDF),query_cosine_sim,retrieval_relevance_score,0.0,medical treatment,Doc 2: acute hospital surgical care,0.0,3
