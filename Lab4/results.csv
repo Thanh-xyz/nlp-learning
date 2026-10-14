@@ -1,0 +1,6 @@
+Model,Representation,Classifier,Vocabulary_Size,Accuracy,Precision,Recall,F1_Score,Training_Time_Sec
+Baseline (TF-IDF Unigram + LR),TF-IDF (Unigram),Logistic Regression,25000,0.8962,0.8869,0.9082,0.8974,11.52
+Model B (Avg Word2Vec + LR),Average Word2Vec (100d),Logistic Regression,57648,0.8432,0.8403,0.8474,0.8439,37.83
+Model C (TF-IDF Unigram + Linear SVM),TF-IDF (Unigram),Linear SVM,25000,0.8917,0.8887,0.8956,0.8921,9.6
+Model D (TF-IDF Uni+Bigram + LR),TF-IDF (Uni + Bigram),Logistic Regression,50000,0.9042,0.8989,0.9108,0.9048,42.67
+Model E (TF-IDF Uni+Bigram + Linear SVM),TF-IDF (Uni + Bigram),Linear SVM,50000,0.9119,0.9077,0.917,0.9123,40.91
