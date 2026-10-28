@@ -1,0 +1,6 @@
+Model,Representation,Sequence_Length,Parameters,Training_Time_s,Accuracy,Precision,Recall,F1
+Logistic Regression,TF-IDF (10k features),All,10001,1.33,0.87,0.8537,0.8955,0.8741
+Simple RNN,Embedding (d=64),100,648450,13.47,0.492,0.4956,0.4458,0.4694
+LSTM,Embedding (d=64),100,673410,11.0,0.522,0.5271,0.5013,0.5139
+GRU,Embedding (d=64),100,665090,32.75,0.6667,0.6711,0.664,0.6676
+Self-Attention,Embedding (d=64),100,652353,8.22,0.7633,0.7614,0.7725,0.7669
