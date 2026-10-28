@@ -45,7 +45,7 @@ def parse_markdown(md_content):
         text = re.sub(r'\*(.+?)\*', r'\\textit{\1}', text)
         
         for i, code in enumerate(code_parts):
-            esc = code.replace('\\', '\\textbackslash{}').replace('{', '\\{').replace('}', '\\}').replace('^', '\\textasciicircum{}').replace('~', '\\textasciitilde{}')
+            esc = code.replace('\\', '\\textbackslash{}').replace('{', '\\{').replace('}', '\\}').replace('^', '\\textasciicircum{}').replace('~', '\\textasciitilde{}').replace('_', r'\_')
             text = text.replace(f"QQCODEINLINE{i}ZZ", r'\texttt{' + esc + '}')
             
         for i, math in enumerate(math_parts):
