@@ -1,0 +1,13 @@
+Category,Model_or_Setting,Detail_1,Detail_2,Parameters,Time_s,Accuracy,Precision,Recall,F1_Score
+Model_Comparison,LSTM,hidden_dim=128,5 epochs,1412225,30.41,0.6307,0.6275,0.6574,0.6421
+Model_Comparison,Transformer_Encoder,"n_heads=4, d_model=128",5 epochs,1477889,98.87,0.724,0.7031,0.7831,0.7409
+Heads_Variation,Heads_1,d_k=128,3 epochs,1477889,52.12,0.702,-,-,0.7136
+Heads_Variation,Heads_2,d_k=64,3 epochs,1477889,59.8,0.716,-,-,0.7237
+Heads_Variation,Heads_4,d_k=32,3 epochs,1477889,61.65,0.71,-,-,0.6908
+Heads_Variation,Heads_8,d_k=16,3 epochs,1477889,78.78,0.7273,-,-,0.7097
+Sequence_Length_Variation,SeqLen_32,Matrix_32x32,4.0 KB,1477889,14.12,0.6233,-,-,0.6806
+Sequence_Length_Variation,SeqLen_64,Matrix_64x64,16.0 KB,1477889,24.92,0.6687,-,-,0.688
+Sequence_Length_Variation,SeqLen_128,Matrix_128x128,64.0 KB,1477889,59.54,0.742,-,-,0.7633
+Sequence_Length_Variation,SeqLen_256,Matrix_256x256,256.0 KB,1477889,163.03,0.784,-,-,0.7936
+Pooling_Strategy,Mean Pooling,"n_heads=4, d_model=128",3 epochs,1477889,61.65,0.71,-,-,0.6908
+Pooling_Strategy,First-Token (CLS-style),"n_heads=4, d_model=128",3 epochs,1477889,62.51,0.5353,-,-,0.519
