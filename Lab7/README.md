@@ -30,9 +30,7 @@ Toàn bộ các deliverables theo đúng quy định tại Mục 32 của file �
 Lab7/
 ├── W7.pdf                               # File đề bài gốc chính thức của giảng viên
 ├── README.md                            # Tài liệu tổng quan, hướng dẫn chạy và tóm tắt kết quả
-├── calculations.md                      # Lời giải chi tiết các bài toán tính tay (4 bài toán, 6 bước chuẩn)
 ├── calculations.pdf                     # Bản PDF học thuật xuất từ calculations.md qua XeLaTeX
-├── prediction.md                        # 6 giả thuyết khoa học được lập và khóa TRƯỚC KHI chạy mô hình
 ├── prediction.pdf                       # Bản PDF học thuật xuất từ prediction.md qua XeLaTeX
 ├── transformer_block.py                 # Module Multi-Head Attention, FFN, TransformerEncoderBlock (100% không comment)
 ├── positional_encoding.py               # Module Sinusoidal Positional Encoding (100% không comment)
@@ -42,9 +40,9 @@ Lab7/
 ├── attention_heads.png                  # Trực quan hóa bản đồ chú ý của 4 Attention Heads độc lập
 ├── learning_curves.png                  # Đường cong học tập (Train Loss vs Val Loss qua 5 epochs)
 ├── confusion_matrix.png                 # Ma trận nhầm lẫn (Confusion Matrix) trên tập kiểm thử IMDb
-├── error_analysis.md                    # Phân tích định tính 6 ca dự đoán đúng/sai thực tế và bản chất Attention
+Attention
 ├── error_analysis.pdf                   # Bản PDF học thuật xuất từ error_analysis.md qua XeLaTeX
-├── reflection.md                        # Chiêm nghiệm, đối chiếu 6 prediction, trả lời câu hỏi vấn đáp và mạch nối BERT
+mạch nối BERT
 └── reflection.pdf                       # Bản PDF học thuật xuất từ reflection.md qua XeLaTeX
 ```
 
@@ -152,3 +150,4 @@ python .agents/skills/assignment-solver/scripts/md_to_pdf.py Lab7/reflection.md
 | **Error Analysis** | 5 | 6 ca thực tế trên Test set, taxonomy phân loại, thảo luận "Attention is NOT Explanation". | **PASS** (5/5) |
 | **Reflection** | 5 | Bảng so sánh 5 mô hình, chuỗi giải quyết limitation, trả lời 9 câu hỏi vấn đáp, nối sang BERT. | **PASS** (5/5) |
 | **Tổng điểm** | **100** | **Đạt trọn vẹn toàn bộ các tiêu chí học thuật** | **100/100** |
+
