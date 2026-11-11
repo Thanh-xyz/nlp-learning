@@ -181,3 +181,4 @@ What was verified:
 | **Error & confidence analysis** | 10 | Trích xuất 8 mẫu lỗi thực tế trên Test set, phân loại taxonomy, giải đáp Q1-Q6. | **PASS** (10/10) |
 | **Reflection** | 5 | Bài luận 450 từ bao quát 6 trụ cột, trả lời 12 câu hỏi và kết nối sang LAB 09. | **PASS** (5/5) |
 | **Tổng điểm** | **100** | **Đạt trọn vẹn toàn bộ các tiêu chí học thuật** | **100/100** |
+
