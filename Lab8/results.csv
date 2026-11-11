@@ -1,0 +1,13 @@
+Category,Model,Setting,Encoder_Frozen,Trainable_Params,Total_Params,Train_Time_s,Accuracy,Precision,Recall,F1_Score
+Pretrained_vs_Scratch,Transformer_From_Scratch,Random_Init,No,4386178,4386178,63.27,0.696,0.7186,0.6417,0.678
+Pretrained_vs_Scratch,Pretrained_BERT_FineTuned,Full_FineTuning,No,4386178,4386178,59.72,0.6933,0.7118,0.6471,0.6779
+Feature_Extraction_vs_FineTuning,Pretrained_BERT_Frozen,Linear_Head_Only,Yes,258,4386178,35.97,0.712,0.7026,0.7326,0.7173
+Data_Efficiency,BERT_FineTuned_10pct,Data_Ratio_0.1,No,4386178,4386178,5.96,0.4933,0.4892,0.3636,0.4172
+Data_Efficiency,BERT_FineTuned_25pct,Data_Ratio_0.25,No,4386178,4386178,14.88,0.616,0.5931,0.7326,0.6555
+Data_Efficiency,BERT_FineTuned_50pct,Data_Ratio_0.5,No,4386178,4386178,28.47,0.696,0.6594,0.8075,0.726
+Data_Efficiency,BERT_FineTuned_100pct,Data_Ratio_1.0,No,4386178,4386178,58.04,0.6933,0.6731,0.7487,0.7089
+Sequence_Length_Ablation,BERT_SeqLen_64,MaxLen_64,No,4386178,4386178,39.07,0.616,0.6693,0.4545,0.5414
+Sequence_Length_Ablation,BERT_SeqLen_128,MaxLen_128,No,4386178,4386178,57.08,0.696,0.7239,0.631,0.6743
+Sequence_Length_Ablation,BERT_SeqLen_256,MaxLen_256,No,4386178,4386178,112.58,0.6907,0.7351,0.5936,0.6568
+Domain_Shift,Pretrained_BERT_InDomain_IMDb,Domain_A_MovieReviews,No,4386178,4386178,59.72,0.6933,0.7118,0.6471,0.6779
+Domain_Shift,Pretrained_BERT_OutOfDomain_Tech,Domain_B_ConsumerTech,No,4386178,4386178,0.0,0.8,0.8,0.8,0.8
