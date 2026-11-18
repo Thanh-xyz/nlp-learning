@@ -1,0 +1,3 @@
+Model,Architecture,Token Accuracy,Entity Precision,Entity Recall,Entity F1
+Baseline (Logistic Regression),Handcrafted Word Features,0.9303,0.6678,0.667,0.6674
+Pretrained Transformer,BERT-base-cased + Token Classifier Head,0.9804,0.9153,0.9138,0.9145
