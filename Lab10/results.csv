@@ -1,0 +1,20 @@
+Experiment,Setting,EM,F1,Time_s
+Exp1_ContextLength,max_length=128 (Single-Pass),0.755,0.7786,5.7
+Exp1_ContextLength,max_length=128 (SlidingWindow),0.84,0.8699,5.7
+Exp1_ContextLength,max_length=256 (Single-Pass),0.8375,0.8662,13.16
+Exp1_ContextLength,max_length=256 (SlidingWindow),0.8375,0.8658,13.16
+Exp1_ContextLength,max_length=384 (Single-Pass),0.84,0.8713,21.13
+Exp1_ContextLength,max_length=384 (SlidingWindow),0.8375,0.8688,21.13
+Exp2_Exp3_Comparison,Baseline (Keyword Overlap),0.0,0.1393,0.04
+Exp2_Exp3_Comparison,"DistilBERT Fresh Head (4 epochs, 128 train)",0.0925,0.1203,230.31
+Exp2_Exp3_Comparison,Fine-tuned Transformer (DistilBERT-SQuAD),0.84,0.8682,55.01
+Exp4_LexicalOverlap,Baseline - High Lexical Overlap (n=106),0.0,0.1884,0.0
+Exp4_LexicalOverlap,Transformer - High Lexical Overlap (n=106),0.8585,0.8928,0.0
+Exp4_LexicalOverlap,Baseline - Low Lexical Overlap (n=86),0.0,0.0831,0.0
+Exp4_LexicalOverlap,Transformer - Low Lexical Overlap (n=86),0.8023,0.8392,0.0
+Controlled_Shuffling,Original Context,0.84,0.8682,0.0
+Controlled_Shuffling,Shuffled Context,0.835,0.8632,0.0
+Exp5_AnswerLength,Length=1 (n=182),0.8681,0.8733,0.0
+Exp5_AnswerLength,Length=2-3 (n=200),0.815,0.8606,0.0
+Exp5_AnswerLength,Length=4-6 (n=16),0.8125,0.8899,0.0
+Exp5_AnswerLength,Length=7+ (n=2),1.0,1.0,0.0
